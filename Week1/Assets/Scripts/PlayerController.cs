@@ -9,6 +9,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] LayerMask groundLayer; // Set this in the Inspector
 
     private Rigidbody2D rb;
+
+    private SpriteRenderer spriteRenderer;
     public bool IsGrounded
     {
         //get => true;
@@ -27,6 +29,7 @@ public class PlayerController : MonoBehaviour
 
         // Apply Movement
         rb.linearVelocity = new Vector2(movementDirection * movementSpeed, rb.linearVelocity.y);
+        spriteRenderer.flipX = rb.linearVelocityX == 0;
 
         // Jump
         if (Input.GetButtonDown("Jump") && IsGrounded)

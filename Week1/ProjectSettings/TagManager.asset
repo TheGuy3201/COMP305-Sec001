@@ -41,5 +41,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background Folliage
+    uniqueID: 1905213505
+    locked: 0
+  - name: Background Terrain
+    uniqueID: 940753895
+    locked: 0
   m_RenderingLayers:
   - Default
