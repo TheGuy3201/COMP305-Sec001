@@ -20,6 +20,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -29,7 +30,7 @@ public class PlayerController : MonoBehaviour
 
         // Apply Movement
         rb.linearVelocity = new Vector2(movementDirection * movementSpeed, rb.linearVelocity.y);
-        spriteRenderer.flipX = rb.linearVelocityX == 0;
+        spriteRenderer.flipX = rb.linearVelocity.x < 0;
 
         // Jump
         if (Input.GetButtonDown("Jump") && IsGrounded)
