@@ -8,8 +8,9 @@ public class UIHandler : MonoBehaviour
     [SerializeField] TMP_Dropdown programs = null;
     [SerializeField] TMP_Sprite image = null;
     [SerializeField] Slider slider = null;
-    [SerializeField] TextMeshProUGUI output = null;
     [SerializeField] TextMeshProUGUI gpaLabel = null;
+    [SerializeField] TextMeshProUGUI usernameLabel = null;
+    [SerializeField] TextMeshProUGUI programLabel = null;
     void Start()
     {
         playerName.text = "Joshua Desroches";
@@ -44,6 +45,8 @@ public class UIHandler : MonoBehaviour
     {
         string playerProgram = programs.value > -1 ?
         programs.options[programs.value].text : "";
-        output.text = $"Name: {playerName.text} Program: {playerProgram}, GPA: {slider.value:F1}";
+        usernameLabel.text = $"Name: {playerName.text}";
+        programLabel.text = $"Program: {playerProgram}";
+        gpaLabel.text = $"GPA: {slider.value:F1}";
     }
 }
