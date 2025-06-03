@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464124183d22a247ab2f79466af5c35, type: 3}
+  m_Name: black knight
+  m_EditorClassIdentifier: 
+  name: black knight
+  description: 
+  importance: 0
+  pieceColor: {fileID: 11400000, guid: 3bf4fc86c111fdc488e6652e31fb4aff, type: 2}
+  sprite: {fileID: 21300000, guid: 88c300a9772c15c43ae54ad27bbd9c25, type: 3}
+  pieceName: 4

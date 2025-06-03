@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1464124183d22a247ab2f79466af5c35, type: 3}
+  m_Name: white queen
+  m_EditorClassIdentifier: 
+  name: white queen
+  description: 
+  importance: 0
+  pieceColor: {fileID: 11400000, guid: de7a21598c4a5b143b4f366cf73abc7d, type: 2}
+  sprite: {fileID: 21300000, guid: 68552275a9dc3c546b7b1faf9d0b1181, type: 3}
+  pieceName: 1
